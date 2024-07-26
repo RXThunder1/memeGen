@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="memeG.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meme Generator</h1>
+        <form id="memeForm" enctype="multipart/form-data">
+            <label for="topText">Top Text:</label>
+            <input type="text" id="topText" name="topText" required>
+            <label for="bottomText">Bottom Text:</label>
+            <input type="text" id="bottomText" name="bottomText" required>
+            <label for="imageUpload">Image:</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
+            <button type="submit">Generate Meme</button>
+        </form>
+    </div>
+
+    <div id="memeList" class="container">
+        <!-- Meme items will be dynamically added here -->
+    </div>
+
+    <script src="memeG.js"></script>
+</body>
+</html>
